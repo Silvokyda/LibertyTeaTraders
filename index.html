@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="icon" type="image/png" href="img/logo-nav.jpeg"/>
+  <title>Liberty Tea Traders Limited</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('img/card1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('https://media.istockphoto.com/id/178028662/photo/several-pilled-up-wooden-boxes-of-tea.jpg?s=612x612&w=0&k=20&c=-lmwMiO1RHab6s1d1_SfKa1IrC4QI6ypHYKAnQ77g5I=');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('https://media.istockphoto.com/id/641473790/photo/sri-lanka-nuwara-eliya-tea-plantation.jpg?s=612x612&w=0&k=20&c=TKFd4e918BCCTnJY9U0i8ZSSQendmhEwFdZA9a6eX2k=');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 50vh;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="z-index: 2000; background-color: #14b314    ;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" href="index.html">
+          <strong>Liberty Tea Traders</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quote.html" rel="nofollow">Get A Quote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="careers.html">Careers</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#youtube" rel="nofollow" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#facebook" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#twitter" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#insta" rel="nofollow" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#insta" rel="nofollow" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Get in Touch with LTT Ltd.</h1>
+                <h5 class="mb-4">Goodness in Every Cup</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="quote.html" role="button" rel="nofollow"
+                  target="_blank">GET A Quote</a>
+                <a class="btn btn-outline-light btn-lg m-2" role="button" href="contact.html">HAVE A CHAT WITH US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>Embrace the Art of Tea</h2>
+                <p>Delve into a world where tradition meets innovation, where ancient tea rituals intertwine<br>
+                  with modern sophistication, and where every cup tells a story of passion, craftsmanship, <br>
+                  and the pursuit of tea perfection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>Unlock the Essence of Pure Tea</h2>
+                <p>Immerse yourself in the authentic flavors of our teas, <br>
+                  sourced directly from nature's bounty and thoughtfully prepared <br>
+                  to preserve their true essence, bringing you closer to the heart of tea culture.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="https://mdbootstrap.com/img/new/slides/031.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>Mission</strong></h4>
+            <p class="text-muted">
+              At Liberty Tea Traders Limited, our mission is to enrich lives
+              by providing exceptional tea experiences. We strive to source
+              the finest tea leaves, craft exquisite blends, and deliver unparalleled quality to our customers,
+              fostering a deep appreciation for the art and culture of tea.
+            </p>
+            <h4><strong>Vision</strong></h4>
+            <p class="text-muted">
+              Our vision is to be the leading global authority in the world of tea.
+              We aspire to continually innovate, pushing the boundaries of tea blending
+              and packaging, while maintaining our commitment to sustainability and ethical
+              practices. Through our passion and expertise, we aim to inspire tea lovers worldwide,
+              fostering a community that cherishes the beauty and serenity found in every cup of tea.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>We Provide</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="img/card3.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tea Blending</h5>
+                <p class="card-text">
+                  At Liberty Tea Traders Limited, we take pride in our unparalleled expertise and
+                  mastery in the art of tea blending, creating unique and exquisite flavors that captivate
+                  the senses.
+
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </p>
+                <a href="contact.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="img/card2.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <br>
+                <br>
+                <h5 class="card-title">Straight line Exports</h5>
+                <p class="card-text">
+                  Our reputation as the premier tea exporter is built on our unwavering dedication
+                  to straight line exports, ensuring that every batch of tea reaches our global
+                  clientele in the most efficient and direct manner, guaranteeing freshness and
+                  preserving the true essence of our remarkable blends.
+
+                  <br>
+                  <br>
+                  <br>
+                </p>
+                <a href="contact.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                  src="https://media.istockphoto.com/id/183874759/photo/teacup.jpg?s=612x612&w=0&k=20&c=OanL1_XQiZZWduiYdiSZQ5tjM-Elml81LNcCXbAa8Wo="
+                  class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Customized Packaging</h5>
+                <p class="card-text">
+                  We go beyond tea blending to offer customized packaging solutions that elevate your tea experience.
+                  Our meticulous attention to detail and innovative packaging designs allow us to create a truly
+                  personalized and visually stunning presentation for our tea products, ensuring that they stand out
+                  and leave a lasting impression on our customers.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <div style="background-color:  #14b314;"  class="text-black">
+      <strong>
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Liberty Tea Traders Ltd
+              </h6>
+              <p>
+                Experience the artistry of our tea masters, who blend passion, expertise, and the finest ingredients to create teas that inspire moments of pure bliss with each and every cup.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Tea Blending</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Tea Importing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Straight Line Exports</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Customized Packaging</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a onclick="openForm1()" class="text-reset">Get a Qoute</a>
+              </p>
+              <p>
+                <a href="contact.html" class="text-reset">Contact Us</a>
+              </p>
+              <p>
+                <a href="" class="text-reset">Portifolio</a>
+              </p>
+              <p>
+                <a href="" class="text-reset">Customer Service</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Mombasa</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@XXX.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 254 XXX XXX XXX</p>
+              <p><i class="fas fa-print me-3"></i> + 254 XXX XXX XXX</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-dark" href="index.html">Liberty Tea Traders Ltd</a>
+      </div>
+      <!-- Copyright -->
+    </strong>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!--Footer-->
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
