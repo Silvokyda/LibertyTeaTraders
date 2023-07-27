@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <link rel="icon" type="image/png" href="img/logo-nav.jpeg"/>
+  <link rel="icon" type="image/png" href="https://i.imgur.com/BRvKe5Z.png"/>
   <title>Liberty Tea Traders Limited - Contact Page</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
@@ -14,34 +14,15 @@
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
   <!-- Custom styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <!--google translate-->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
   <!--Main Navigation-->
   <header>
-    <style>
-      /* Height for devices larger than 576px */
-      @media (min-width: 992px) {
-        #introCarousel {
-          margin-top: -58.59px;
-        }
-
-        #introCarousel,
-        .carousel-inner,
-        .carousel-item,
-        .carousel-item.active {
-          height: 50vh;
-        }
-      }
-
-      .navbar .nav-link {
-        color: #fff !important;
-      }
-    </style>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" style="z-index: 2000; background-color: #14b314    ;">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <!-- Navbar brand -->
         <a class="navbar-brand nav-link" href="index.html">
@@ -57,7 +38,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="team.html">Team</a>
+              <a class="nav-link" aria-current="page" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="quote.html" rel="nofollow">Get A Quote</a>
@@ -80,7 +61,7 @@
               </a>
             </li>
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" href="#twitter" rel="nofollow" target="_blank">
+              <a class="nav-link" href="https://twitter.com/254TeaTraders" rel="nofollow" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
@@ -98,211 +79,97 @@
         </div>
       </div>
     </nav>
+  </header> 
     <!-- Navbar -->    
     <!-- Content of each page goes here -->
     <section class="mb-5">
         <h4 class="mb-5 text-center"><strong>Get in touch with us</strong></h4>
-
-        <div class="row d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
           <div class="col-md-6">
-            <form>
-              <!-- 2 column grid layout with text inputs for the first and last names -->
-              <div class="row mb-4">
-                <div class="col">
-                  <div class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
-                    <label class="form-label" for="form3Example1">First name</label>
-                  </div>
+            <form action="https://formsubmit.co/6d0032507ba2218715a036500d780733" method="POST">
+              <div class="card-body z-depth-2" style="background-color: white;">
+                <!--Header-->
+                <div class="text-center">
+                  <h3 class="dark-grey-text">
+                    <strong>Talk to us:</strong>
+                  </h3>
+                  <hr />
                 </div>
-                <div class="col">
-                  <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
-                    <label class="form-label" for="form3Example2">Last name</label>
-                  </div>
+                <!--Body-->
+                <div class="md-form">
+                  <i class="fas fa-user prefix grey-text"></i>
+                  <input type="text" id="form3" class="form-control" name="name" required />
+                  <label class="dark-grey-text" for="form3">Name</label>
                 </div>
-              </div>
-
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
-                <label class="form-label" for="form3Example3">Email address</label>
-              </div>
-
-              <!-- Password input -->
-              <div class="form-outline mb-4">
-                <input type="text" id="form3Example4" class="form-control" />
-                <label class="form-label" for="form3Example4">Message</label>
-              </div>
-
-              <!-- Checkbox -->
-              <div class="form-check d-flex justify-content-center mb-4">
-                <input
-                  class="form-check-input me-2"
-                  type="checkbox"
-                  value=""
-                  id="form2Example3"
-                  checked
-                />
-                <label class="form-check-label" for="form2Example3">
-                  Subscribe to our newsletter
-                </label>
-              </div>
-
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">
-                Send
-              </button>
-
-              <!-- Register buttons -->
-              <div class="text-center">
-                <p>or Send us your message on our socials:</p>
-                <button type="button" class="btn btn-primary btn-floating mx-1">
-                  <i class="fab fa-facebook-f"></i>
-                </button>
-
-                <button type="button" class="btn btn-primary btn-floating mx-1">
-                  <i class="fab fa-google"></i>
-                </button>
-
-                <button type="button" class="btn btn-primary btn-floating mx-1">
-                  <i class="fab fa-twitter"></i>
-                </button>
+                <div class="md-form">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input type="email" id="form2" class="form-control" name="email" required />
+                  <label class="dark-grey-text" for="form2">Email</label>
+                </div>
+                <div class="md-form">
+                  <i class="fas fa-phone prefix grey-text"></i>
+                  <input type="number" id="form5" class="form-control" name="phone" required />
+                  <label class="dark-grey-text" for="form5">Phone</label>
+                </div>
+                <!--Textarea with icon prefix-->
+                <div class="md-form">
+                  <i class="fas fa-pencil-alt prefix grey-text"></i>
+                  <textarea type="text" id="form8" class="md-textarea form-control" rows="3" name="message"
+                    required></textarea>
+                  <label class="dark-grey-text" for="form8">Message</label>
+                </div>
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting Liberty Tea traders, we will get back to you as soon as possible.">
+                  <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_subject" value="New Message!">
+                  <input type="hidden" name="_next" value="https://libertyteatraders.com/">
+                <div class="text-center mt-3">
+                  <button type="submit" class="btn bookhover btn-outline-success btn-rounded waves-effect">
+                    SUBMIT
+                  </button>
+                </div>
               </div>
             </form>
           </div>
         </div>
-      </section>
+    </section>
     <!-- Add navigation bar, header, sections, and footer -->
-    <!--Footer-->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <div style="background-color: #14b314;"  class="text-black">
-          <strong>
-          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
-    
-            <!-- Right -->
-            <div>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-            <!-- Right -->
-          </section>
-          <!-- Section: Social media -->
-    
-          <!-- Section: Links  -->
-          <section class="">
-            <div class="container text-center text-md-start mt-5">
-              <!-- Grid row -->
-              <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-gem me-3"></i>Liberty Tea Traders Ltd
-                  </h6>
-                  <p>
-                    Experience the artistry of our tea masters, who blend passion, expertise, and the finest ingredients to create teas that inspire moments of pure bliss with each and every cup.
-                  </p>
-                </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    Products
-                  </h6>
-                  <p>
-                    <a href="#!" class="text-reset">Tea Blending</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Tea Importing</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Straight Line Exports</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Customized Packaging</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    Useful links
-                  </h6>
-                  <p>
-                    <a href="#!" class="text-reset">Get a Qoute</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Contact Us</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Portifolio</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Customer Service</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                  <p><i class="fas fa-home me-3"></i> Mombasa</p>
-                  <p>
-                    <i class="fas fa-envelope me-3"></i>
-                    info@XXX.com
-                  </p>
-                  <p><i class="fas fa-phone me-3"></i> + 254 XXX XXX XXX</p>
-                  <p><i class="fas fa-print me-3"></i> + 254 XXX XXX XXX</p>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-            </div>
-          </section>
-          <!-- Section: Links  -->
-    
-          <!-- Copyright -->
-          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2023 Copyright:
-            <a class="text-dark" href="index.html">Liberty Tea Traders Ltd</a>
-          </div>
-          <!-- Copyright -->
-        </strong>
-        </div>
-      </footer>
-      <!-- Footer -->
-      <!--Footer-->
-      <!-- MDB -->
-      <script type="text/javascript" src="js/mdb.min.js"></script>
-      <!-- Custom scripts -->
-      <script type="text/javascript" src="js/script.js"></script>
-    </body>
-    
-    </html>
+    <script async src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Footer -->
+    <div id="google_translate_element"></div>
+    <br>
+    <div class="footer">
+      <center>
+      <strong>
+          <span>Get connected with us on social networks:</span>
+          <br>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/254TeaTraders" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <br> © 2023 Copyright: <a href="index.html" style="color: #fff">Liberty Tea Traders Ltd</a>
+      </strong>
+      </center>
+    </div>
+    <!-- Footer -->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--google translate-->
+  </body>
+</html

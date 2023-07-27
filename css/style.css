@@ -43,12 +43,16 @@ p {
     font-weight: 300;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#introCarousel p{
+  color: #fff;
+}
+
+.navbar h1,
+.navbar h2,
+.navbar h3,
+.navbar h4,
+.navbar h5,
+.navbar h6 {
     
     color: #333333;
     font-weight: 700;
@@ -64,6 +68,57 @@ img {
     height: auto;
 }
 
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 40vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('https://i.imgur.com/gcCrs1M.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('https://media.istockphoto.com/id/178028662/photo/several-pilled-up-wooden-boxes-of-tea.jpg?s=612x612&w=0&k=20&c=-lmwMiO1RHab6s1d1_SfKa1IrC4QI6ypHYKAnQ77g5I=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('https://media.istockphoto.com/id/641473790/photo/sri-lanka-nuwara-eliya-tea-plantation.jpg?s=612x612&w=0&k=20&c=TKFd4e918BCCTnJY9U0i8ZSSQendmhEwFdZA9a6eX2k=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 50vh;
+  }
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar {
+  z-index: 2000; 
+  background-color: #1e490b;
+}
 
 
 /**********************************/
@@ -467,4 +522,44 @@ img {
     position: relative;
   }
 
-  
+  .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position:fixed;
+  width:100%;
+  height: 70px;
+  background-color: #1e490b;
+  bottom: 0;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  color: #fff;
+}
+
+#google_translate_element {
+  /* Set the desired width and height */
+  position:fixed;
+  width: 150px;
+  bottom: 13px;
+  /* You can add more styles as needed */
+}
