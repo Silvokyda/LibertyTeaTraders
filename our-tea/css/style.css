@@ -1,0 +1,565 @@
+/**********************************/
+/********** General CSS ***********/
+/**********************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #454545;
+    font-weight: 300;
+    background: #ffffff;
+}
+
+a {
+    color: #333333;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #454545;
+    font-weight: 300;
+}
+
+#introCarousel p{
+  color: #fff;
+}
+
+.navbar h1,
+.navbar h2,
+.navbar h3,
+.navbar h4,
+.navbar h5,
+.navbar h6 {
+    
+    color: #333333;
+    font-weight: 700;
+    
+}
+
+h1 {
+    font-weight: 900;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 40vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('https://i.imgur.com/gcCrs1M.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('https://media.istockphoto.com/id/178028662/photo/several-pilled-up-wooden-boxes-of-tea.jpg?s=612x612&w=0&k=20&c=-lmwMiO1RHab6s1d1_SfKa1IrC4QI6ypHYKAnQ77g5I=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('https://media.istockphoto.com/id/641473790/photo/sri-lanka-nuwara-eliya-tea-plantation.jpg?s=612x612&w=0&k=20&c=TKFd4e918BCCTnJY9U0i8ZSSQendmhEwFdZA9a6eX2k=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 50vh;
+  }
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar {
+  z-index: 2000; 
+  background-color: #1e490b;
+}
+
+
+/**********************************/
+/***** Layout & Section Title *****/
+/**********************************/
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.column {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .column {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .column {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .column {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    padding: 45px 0 30px 0;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 5px;
+    left: calc(50% - 25px);
+    background: #353535;
+}
+
+.section-title h1 {
+    color: #353535;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 767.98px) {
+    .section-title h1 {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+}
+
+@media(max-width: 567.98px) {
+    .section-title h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+/**********************************/
+/********** Team #1 Style *********/
+/**********************************/
+.team-1 {
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team-1 .team-img {
+    overflow: hidden;
+}
+
+.team-1 .team-img img {
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+}
+
+.team-1:hover .team-img img {
+    transform: scale(1.2);
+}
+
+.team-1 .team-content {
+    padding: 20px;
+}
+
+.team-1 .team-content h2 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.team-1 .team-content h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.team-1 .team-content h4 {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.team-1 .team-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.team-1 .team-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0;
+}
+
+.team-1 .team-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 11px 0 10px 0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    transition: all .3s;
+}
+
+.team-1 .team-social a.social-tw {
+    background: #00acee;
+}
+
+.team-1 .team-social a.social-fb {
+    background: #3b5998;
+}
+
+.team-1 .team-social a.social-li {
+    background: #0e76a8;
+}
+
+.team-1 .team-social a.social-in {
+    background: #3f729b;
+}
+
+.team-1 .team-social a.social-yt {
+    background: #c4302b;
+}
+
+.team-1 .team-social a:last-child {
+    margin-right: 0;
+}
+
+.team-1 .team-social a:hover {
+    background: #222222;
+}
+
+
+.pagecontainer {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .pagecontainer ul {
+    padding: 0;
+  }
+
+  .current-openings h2 {
+    font-size: 30px;
+    font-family: 'Oswald', 'Arial Narrow', 'Trebuchet MS', sans-serif;
+    color: #333333;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  #bottom-adjustment {
+    margin-top: 20px;
+  }
+
+  #location {
+    margin-top: 0;
+  }
+
+  .variable-width button {
+    display: none !important;
+  }
+
+  .variable-width img {
+    margin: 0 15px;
+  }
+
+  .overall-carousel {
+    overflow: hidden;
+  }
+
+  .ribbons-total {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1.4em;
+  }
+
+  aside {
+    line-height: 40px;
+    position: relative;
+  }
+
+  aside.ribbons {
+    background-color: #e57177;
+    width: 18em;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    z-index: 200;
+    margin-right: 2em;
+  }
+
+  .ribbons a,
+  .grey-ribbon a {
+    cursor: pointer;
+  }
+
+  .ribbons:after {
+    border-width: 20px 10px 20px 0;
+    border-color: #e57177 transparent;
+    right: -10px;
+  }
+
+  .ribbons:before,
+  .grey-ribbon:before {
+    border-width: 20px 0 20px 10px;
+    left: -10px;
+  }
+
+  .ribbons:before {
+    border-color: #e57177 transparent;
+  }
+
+  aside:before,
+  aside:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+  }
+
+  aside.grey-ribbon {
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    z-index: 900;
+    position: absolute;
+  }
+
+  .grey-ribbon:after {
+    border-width: 20px 10px 20px 0;
+    border-color: grey transparent;
+    right: -10px;
+  }
+
+  .grey-ribbon:before {
+    border-color: grey transparent;
+  }
+
+  .current-openings {
+    margin: 3.5em 0;
+  }
+
+  #whr_embed_hook {
+    width: 75%;
+    margin: auto;
+  }
+
+  .whr-info {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-right: 2.5em;
+  }
+
+  .whr-info span {
+    display: none;
+  }
+
+  .whr-item {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+
+  .whr-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .whr-title a {
+    color: #e57177;
+  }
+
+  .whr-location,
+  .whr-date {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .job-labels {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto;
+    width: 70%;
+  }
+
+  .whr-dept,
+  .department {
+    display: none;
+  }
+
+  .location {
+    padding-left: 0%;
+  }
+
+  .date{
+    padding-left: 0.5em;
+  }
+
+  .position{
+    padding-right: 0.5em;
+    position: relative;
+  }
+
+  .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position:fixed;
+  width:100%;
+  height: 70px;
+  background-color: #1e490b;
+  bottom: 0;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  color: #fff;
+}
+
+#google_translate_element {
+  /* Set the desired width and height */
+  position:fixed;
+  width: 150px;
+  bottom: 13px;
+  /* You can add more styles as needed */
+}
