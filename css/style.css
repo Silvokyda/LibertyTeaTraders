@@ -84,14 +84,14 @@ img {
 }
 
 .carousel-item:nth-child(2) {
-  background-image: url('https://media.istockphoto.com/id/178028662/photo/several-pilled-up-wooden-boxes-of-tea.jpg?s=612x612&w=0&k=20&c=-lmwMiO1RHab6s1d1_SfKa1IrC4QI6ypHYKAnQ77g5I=');
+  background-image: url('https://i.imgur.com/Cokq0cn.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .carousel-item:nth-child(3) {
-  background-image: url('https://media.istockphoto.com/id/641473790/photo/sri-lanka-nuwara-eliya-tea-plantation.jpg?s=612x612&w=0&k=20&c=TKFd4e918BCCTnJY9U0i8ZSSQendmhEwFdZA9a6eX2k=');
+  background-image: url('https://i.imgur.com/Y2yl6Jh.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -546,7 +546,6 @@ img {
   display: flex;
   justify-content: center; 
   align-items: center; 
-  position:fixed;
   width:100%;
   height: 70px;
   background-color: #1e490b;
@@ -558,8 +557,12 @@ img {
 
 #google_translate_element {
   /* Set the desired width and height */
-  position:fixed;
-  width: 150px;
-  bottom: 13px;
+  height: 26px !important; 
+  overflow: hidden !important;
   /* You can add more styles as needed */
+}
+
+.navbar-brand img {
+  width: 40px; /* Set the desired width */
+  height: auto; /* Allow the height to adjust proportionally */
 }
