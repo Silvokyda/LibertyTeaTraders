@@ -18,7 +18,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #454545;
     font-weight: 300;
-    background: #ffffff;
+    background: #ffffff url("https://i.imgur.com/BRvKe5Z.png") no-repeat fixed center;
 }
 
 a {
